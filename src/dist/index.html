@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./output.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="flex flex-col box-border">
+      <img src="../assets/Road.svg" alt="road" class="absolute top-0 right-20 z-0 " />
+      <img
+        src="../assets/Hero.png"
+        class="absolute bottom-24 right-0 z-10 w-auto sm:bottom-24" alt="cars"
+      />
+      <section class="pt-4 pl-6 pr-6 pb-4 flex justify-center box-border z-20 sm:pl-6 sm:pr-6 md:pl-32 md:pr-32">
+        <div class="flex flex-row flex-wrap gap-3 items-center justify-between w-full">
+          <img src="../assets/Logo.svg"  class="w-24 sm:w-28"/>
+          <nav id="nav" class="flex flex-row gap-6 justify-center items-center"><a href="#gallery" class="nav-a">Galeria zdjęć</a><a href="#footer" class="nav-a">FaQ</a></nav>
+          <button class="blueButton">Zadzwoń do nas</button>
+        </div>
+      </section>
+
+      <section class="h-auto box-border flex flex-col pt-6 pl-6 pr-4 pb-48 sm:pb-72 md:pl-32 2xl:pt-48">
+        <div class="flex flex-col gap-8 z-20 ">
+          <h1>Sprzedajemy samochody </br>z europy</h1>
+          <p>Kup komfortowy pojazd, aby każda podróż </br> była wyjątkowym przeżyciem.</p>
+          <div class="flex flex-col gap-6 md:flex-row">
+
+            <button class="blueButton">Zobacz zdjęcia</button>
+            <button class="whiteButton">Zadzwoń do nas</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="h-52 pl-6 pr-6 flex flex-col justify-end md:pl-20">
+<div class="flex flex-col justify-between h-32">
+  <div class="flex flex-col"> <span class="text-customBlue font-Roboto-Condensed font-normal text-xl">Prezentacja firmy</span>
+    <span class="text-customBlackDark font-Bebas-Neue font-normal text-4xl">Zobacz naszą Galerię zdjęć</span></div>
+    <ul class="list-none flex flex-wrap gap-12"><li><button class="textButton-active">Samochody osobowe</button></li><li><button class="textButton">Samochody dostawcze</button></li></ul>
+</div>
+      </section>
+
+    <section id="carousel-box" class="w-full flex flex-col gap-12 pt-20 pl-6 pb-20 box-border items-center md:pl-20">
+<div id="carousel" class="flex flex-row gap-16 w-full box-border max-w-full overflow-x-hidden">
+  <img src="../assets/Car-1.svg" alt="car-1"/>
+  <img src="../assets/Car-2.svg" alt="car-2"/>
+  <img src="../assets/Car-3.svg" alt="car-3"/>
+</div>
+<div id="carousel-buttons-box" class="flex flex-row gap-3 w-min">
+  <button class="dotButton-active"></button>
+  <button class="dotButton"></button>
+  <button class="dotButton"></button>
+  <button class="dotButton"></button>
+  <button class="dotButton"></button>
+</div>
+    </section>  
+
+<section id="seo" class="flex flex-col pl-6 pr-6 pt-20 pb-20 gap-12 bg-customBlackLight sm:flex-row md:pl-32 md:pr-32">
+  <div class="flex flex-col gap-4">
+    <span class="text-2xl font-Bebas-Neue text-customWhiteText">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</span>
+<span class="text-sm text-customWhiteText font-Roboto-Condensed">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</span>
+  <button class="dropdownButton"><span>Rozwiń</span><img src="../assets/arrow-down.svg" width="12.73px" height="14.62px"/></button>
+</div>
+<div class="flex flex-col gap-4">
+  <span class="text-2xl font-Bebas-Neue text-customWhiteText">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</span>
+<span class="text-sm text-customWhiteText font-Roboto-Condensed">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</span>
+<button class="dropdownButton"><span>Rozwiń</span><img src="../assets/arrow-down.svg" width="12.73px" height="14.62px"/></button>
+</div>
+</section>
+
+<section id="footer" class="pl-6 pr-6 pt-6 pb-6 flex flex-row justify-between items-center bg-customBlackLight border-customWhiteText border-t md:pl-32 md:pr-32">
+  <span class="font-Roboto-Condensed font-bold text-base text-customWhiteText">Cars Spot</span>
+  <a href="#nav" class="text-customWhiteText underline font-Roboto-Condensed">Polityka prywatności</a>
+</section>
+
+    </main>
+  </body>
+</html>

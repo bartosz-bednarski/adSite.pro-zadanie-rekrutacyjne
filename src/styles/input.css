@@ -1,0 +1,112 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+html {
+  font-size: 16px;
+}
+body {
+  background: rgba(247, 247, 247, 1);
+  font-size: 16px;
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  font-size: 4.75rem;
+}
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(40, 40, 40, 1);
+}
+
+a:hover {
+  cursor: pointer;
+}
+@layer components {
+  .nav-a {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(40, 40, 40, 1);
+  }
+  .blueButton {
+    width: fit-content;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 24px;
+    background-color: rgba(1, 71, 255, 1);
+    color: rgba(247, 247, 247, 1);
+    border-radius: 10px;
+  }
+  .whiteButton {
+    width: fit-content;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 24px;
+    color: rgba(1, 71, 255, 1);
+    border-radius: 10px;
+    background: rgba(247, 247, 247, 1);
+    border: 1px solid rgba(1, 71, 255, 1);
+  }
+  .textButton {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 1);
+  }
+  .textButton-active {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(1, 71, 255, 1);
+    text-decoration: underline;
+  }
+  .dotButton {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgba(237, 237, 237, 1);
+  }
+
+  .dotButton-active {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #0147ff;
+  }
+  .dropdownButton {
+    gap: 6px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 6px;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 1);
+  }
+  @media only screen and (max-width: 640px) {
+    .blueButton,
+    .whiteButton {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+  }
+}
+@media only screen and (max-width: 890px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
