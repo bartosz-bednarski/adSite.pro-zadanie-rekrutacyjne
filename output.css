@@ -677,16 +677,8 @@ video {
   z-index: 20;
 }
 
-.mr-12{
-  margin-right: 3rem;
-}
-
 .box-border{
   box-sizing: border-box;
-}
-
-.inline{
-  display: inline;
 }
 
 .flex{
